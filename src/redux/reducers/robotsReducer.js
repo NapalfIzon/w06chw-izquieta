@@ -1,10 +1,12 @@
 import actionTypes from "../actions/actionTypes";
+
 const robotsReducer = (robots = [], action) => {
   let newRobots;
 
   switch (action.type) {
     case actionTypes.loadRobots:
-      newRobots = [...action.robots];
+      newRobots = action.robots;
+      console.log("llego al loadRobotsAction");
       break;
     default:
       newRobots = robots;

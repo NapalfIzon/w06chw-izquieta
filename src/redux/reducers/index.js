@@ -1,5 +1,5 @@
-const { combineReducers } = require("redux");
-const { default: robotsReducer } = require("./robotsReducer");
+import { combineReducers } from "redux";
+import robotsReducer from "./robotsReducer";
 
 const rootReducer = combineReducers({
   robots: robotsReducer,
