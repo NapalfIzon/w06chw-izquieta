@@ -1,11 +1,11 @@
 import actionTypes from "./actionTypes";
 
-export const loadChallengesAction = (challenges) => ({
-  type: actionTypes.loadChallenges,
-  challenges,
+export const loadRobotsAction = (robots) => ({
+  type: actionTypes.loadRobots,
+  robots,
 });
 
-export const loadCurrentChallengeAction = (challenge) => ({
-  type: actionTypes.loadCurrentChallenge,
-  challenge,
+export const loadCurrentRobotAction = (robot) => ({
+  type: actionTypes.loadCurrentRobot,
+  robot,
 });
