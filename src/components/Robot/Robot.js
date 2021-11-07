@@ -11,8 +11,6 @@ const Robot = () => {
     dispatch(loadRobotsThunk());
   }, [dispatch]);
 
-  console.log(robots);
-
   return (
     <>
       {robots.map((robot) => (

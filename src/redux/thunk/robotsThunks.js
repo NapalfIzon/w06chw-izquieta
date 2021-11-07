@@ -1,7 +1,7 @@
 import axios from "axios";
 import { loadRobotsAction } from "../actions/actionCreators";
 
-const endpoint = "https://w06chw-api.herokuapp.com/robots/";
+const endpoint = process.env.REACT_APP_API_ENDPOINT;
 
 export const loadRobotsThunk = () => {
   return async (dispatch) => {
