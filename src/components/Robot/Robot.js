@@ -1,10 +1,22 @@
+import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { loadRobotsThunk } from "../../redux/thunk/robotsThunks";
+
 const Robot = () => {
-  const robots = [{ id: 1 }, { id: 2 }, { id: 3 }];
+  const robots = useSelector(({ robots }) => robots);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(loadRobotsThunk());
+  }, [dispatch]);
+
+  console.log(robots);
 
   return (
     <>
       {robots.map((robot) => (
-        <li key={robot.id}>
+        <li key={robot.token}>
           <p>This will be a robot item</p>
         </li>
       ))}
