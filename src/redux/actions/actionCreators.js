@@ -9,3 +9,8 @@ export const loadCurrentRobotAction = (robot) => ({
   type: actionTypes.loadCurrentRobot,
   robot,
 });
+
+export const loginUserAction = (user) => ({
+  type: actionTypes.loginUser,
+  user,
+});
