@@ -1,0 +1,57 @@
+// https://i.ibb.co/GxCVn2q/r2d2.png
+
+.robot {
+  position: relative;
+  margin: 50px;
+  padding: 50px;
+  border: thick outset red;
+  display: flex;
+  &__image {
+    margin-right: 25px;
+    height: 320px;
+    transition: all 1.3s;
+    &:hover {
+      position: sticky;
+      transform: scale(1.2);
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__info {
+    height: 100px;
+    padding: 25px;
+    margin: 5px;
+    border-radius: 25%;
+    background: radial-gradient(black, grey);
+    color: white;
+  }
+  &__button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20%;
+    background-color: blue;
+    color: white;
+    font-size: large;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    &:hover {
+      background-color: red;
+    }
+  }
+}
+
+.separator-robot {
+  height: 106px;
+  width: 75px;
+  background-image: url("https://i.ibb.co/GxCVn2q/r2d2.png");
+}

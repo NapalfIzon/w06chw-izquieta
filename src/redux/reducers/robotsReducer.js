@@ -6,7 +6,6 @@ const robotsReducer = (robots = [], action) => {
   switch (action.type) {
     case actionTypes.loadRobots:
       newRobots = action.robots;
-      console.log("llego al loadRobotsAction");
       break;
     default:
       newRobots = robots;
