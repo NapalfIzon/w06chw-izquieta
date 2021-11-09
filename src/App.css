@@ -12,6 +12,7 @@ body {
 }
 
 #root {
+  /* TODO puede que haya que cambiarlo por .App */
   display: flex;
   flex-direction: column;
   align-items: center;
