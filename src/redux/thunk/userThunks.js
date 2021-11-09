@@ -4,7 +4,7 @@ import { loginUserAction } from "../actions/actionCreators";
 
 const loginUserThunk = (user) => async (dispatch) => {
   const response = await axios.post(
-    process.env.REACT_APP_API_ENDPOINT + "/users",
+    process.env.REACT_APP_API_ENDPOINT + "/users/login",
     user
   );
 

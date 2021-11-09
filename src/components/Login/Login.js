@@ -7,7 +7,7 @@ const Login = () => {
     username: "",
     password: "",
   });
-  const { userLogin } = useUser();
+  const { loginUser } = useUser();
 
   const changeText = (event) => {
     setFormularyData({
@@ -18,7 +18,7 @@ const Login = () => {
 
   const loginRequest = (event) => {
     event.preventDefault();
-    userLogin(formularyData);
+    loginUser(formularyData);
   };
 
   return (
